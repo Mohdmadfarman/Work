@@ -1,0 +1,99 @@
+/* styles.css */
+body {
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    color: #fff;
+}
+
+.container {
+    position: relative;
+    width: 350px;
+    padding: 40px;
+    background: #111;
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgba(0, 255, 234, 0.5);
+}
+
+.login-form h2 {
+    margin: 0 0 20px;
+    text-align: center;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+}
+
+.input-group label {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+.input-group input:focus + label,
+.input-group input:not(:placeholder-shown) + label {
+    top: -5px;
+    font-size: 12px;
+    color: #0ff;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.remember-me input {
+    margin-right: 10px;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    background: #00f0e1;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+    color: #000;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #0ff;
+}
+
+.signup-text {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.signup-text a {
+    color: #0ff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.signup-text a:hover {
+    text-decoration: underline;
+}
